@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资质/人员/项目查询</title>
+    <link rel="stylesheet" href="css/both.css">
+    <link rel="stylesheet" href="css/select.css">
+</head>
+<body>
+<div class="overall">
+    <div class="header">
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="center">
+        <div class="demo">
+            <div class="demo_top">
+                <div class="top_center">
+                    <input type="radio" id="company" checked class="type" name="type" value="企业"/>
+                    <label for="company">企业</label>
+                    <!--<input type="radio" id="person" class="type" name="type"  value="人员" />-->
+                    <!--<label for="person">人员</label>-->
+                    <!--<input type="text" id="search"  placeholder="请输入企业名称" >-->
+                    <div class="search">
+                        <input type="text" id="search_text"  placeholder="请输入企业名称" />
+                        <div id="auto_div">
+                        </div>
+                        <label for="search_text"><img src="img/search.png" id="search" alt=""></label>
+
+                    </div>
+                    <!--<div class="news"><img src="img/wifi.svg" alt=""><p><span>新增公司：</span><span id="new_company">间谍公司,哎哎公司,皮卡丘公司,间谍公司,娱乐公司,爱奇艺公司,皮卡丘公司,</span></p></div>-->
+                </div>
+            </div>
+            <div class="company_name selects">
+                <ul id="select_company">
+                    <li><p>企业条件 ：</p></li>
+                    <li>
+                        <select name="" class="category" id="com-category">
+                            <option value="" hidden>资质类别</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="" class="big_type" id="big_type" >
+                            <option value="" hidden>资质名称大类</option>
+
+
+                        </select>
+                    </li>
+                    <li>
+                        <select name="" class="litter_type" id="litter_type">
+                            <option value="" hidden>资质名称小类</option>
+
+                        </select>
+                    </li>
+
+                    <li>
+                        <select name="" class="major" id="major">
+                            <option value="" hidden>专业</option>
+
+                        </select>
+                    </li>
+                    <li>
+                        <select name="" class="grade" id="grade">
+                            <option value="" hidden>等级</option>
+
+
+
+                        </select>
+                    </li>
+                    <!--<li>-->
+                        <!--<select name="" class="region">-->
+                            <!--<option value="">注册属地</option>-->
+                            <!--<option value="region">region</option>-->
+
+                        <!--</select>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<select name="" class="register_place">-->
+                            <!--<option value="">注册地</option>-->
+                            <!--<option value="成都">成都</option>-->
+
+                        <!--</select>-->
+                    <!--</li>-->
+                </ul>
+                <button class="add add1" id="add1">添加筛选</button>
+            </div>
+            <div class="company_insert insert">
+                <p>查询条件：</p>
+                <div class="line" id="company_line">
+
+
+                </div>
+                <!--<button class="save save1" id="save1">查询</button>-->
+            </div>
+            <div class="person_name selects">
+                <ul id="person_select">
+                    <li><p>人员条件 ：</p></li>
+                    <li>
+                        <select name="" class="category category_person">
+                            <option value="">人员类别</option>
+                        </select>
+                    </li>
+                    <!--<li>-->
+                        <!--<select name="" class="call">-->
+                            <!--<option value="">资格名称</option>-->
+                            <!--<option value="call">call</option>-->
+
+                        <!--</select>-->
+                    <!--</li>-->
+
+                    <li>
+                        <select name="" class="grade grade_person" id="grade_person">
+                            <option value="">名称/等级</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="" class="major major_person" id="per_major">
+                            <option value="">专业</option>
+
+                        </select>
+                    </li>
+                    <!--<li class="number">-->
+                        <!--人数：<input type="number" id="number" value="1">-->
+                    <!--</li>-->
+
+                </ul>
+                <button class="add add2" id="add2">添加筛选</button>
+            </div>
+            <div class="person_insert insert">
+                <p>查询条件：</p>
+                <div class="line" id="people_line">
+                </div>
+                <!--<button class="save save2">查询</button>-->
+            </div>
+            <div class="project">
+                <ul>
+                    <li><p class="title">项目条件</p></li>
+                   <li><p>基础筛选：</p>
+                    <div class="project_child">
+                        <ul>
+                            <li><select name="" class="category_project project_select" id="project_type">
+                                <option value="">项目分类</option>
+
+                            </select></li>
+                            <li><select name="" class="build_project project_select" id="project_nature">
+                                <option value="">建设性质</option>
+                            </select></li>
+                            <li><select name=""  class="use_project project_select" id="project_use">
+                                <option value="">工程用途</option>
+                            </select></li>
+
+                        </ul>
+                    </div>
+                </li>
+                    <li><p>招投标：</p>
+                        <div class="project_child">
+                            <ul>
+                                <li><select name=""  id="bid_way" class="toubiao_type_project project_select">
+                                    <option value="">投标类型</option></select></li>
+                                <li><input type="text" class="zhongbiao_number_project project_input" id="bid_money" placeholder="中标金额(>=万元)"></li>
+                                <li  class="time_from_to">
+                                    <input type="text"  class="zhongbiao_date_project data_time project_input" onfocus="(this.type='date')" class="time"  name="" id="bid_date_start" placeholder="中标日期(xxxx年-xx月-x日)" value="" />——
+                                    <input type="text"  class="zhongbiaojun_date_project time_small project_input" onfocus="(this.type='date')" class="time"  name="" id="bid_date_end" placeholder="xxxx年-xx月-x日" value="" />
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><p>合同备案：</p>
+                        <div class="project_child">
+                            <ul>
+                                <li>
+                                    <select name="" id="contract_type" class="hetong_type_project project_select">
+                                        <option value="">合同类型</option></select></li>
+                                <li><input type="text" class="hetong_money_project project_input" id ="contract_money" placeholder="合同金额(>=万元)"></li>
+                                <li><input type="text"  class="xuke_money_project project_input" id="contract_scale" placeholder="建设规模(>=平方米)"></li>
+                                <li class="time_from_to">
+                                    <input type="text"  class="hetong_date_project data_time project_input" id="contract_date_start" onfocus="(this.type='date')" class="time"  name="" placeholder="合同签订日期(xxxx年-xx月-x日)" value="" />——
+                               <input type="text"  class="hetongjun_date_project time_small project_input"  id="contract_date_end" onfocus="(this.type='date')" class="time"  name="" placeholder="xxxx年-xx月-x日" value="" /></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><p>施工许可：</p>
+                        <div class="project_child">
+                            <ul>
+                                <li><input type="text"  id="permit_money" class="xuke_money_project project_input" placeholder="合同金额(>=万元)"></li>
+                                <li><input type="text" id="permit_area" class="xuke_mianji_project project_input" placeholder="面积(>=平方米)"></li>
+                                <li class="time_from_to">
+                                    <input type="text"  class="xuke_fazheng_project time_small project_input time" onfocus="(this.type='date')"   id="permit_certdate_start" name="xuke_fazheng_project" placeholder="发证日期(xxxx年-xx月-x日)" value="" /></li>
+                                <li class="time_from_to">
+                                <input type="text"  class="xuke_fazheng_project time_small project_input time" onfocus="(this.type='date')"   id="permit_certdate_end" name="xuke_fazheng_project" placeholder="发证结束日期(xxxx年-xx月-x日)" value="" /></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><p>竣工验收备案：</p>
+                        <div class="project_child">
+                            <ul>
+                                <li><input type="text"  class="shi_mianji_project project_input" id="finish_area" placeholder="实际面积(>=平方米)"></li>
+                                <li><input type="text"  class="shi_zaojia_project project_input" id="finish_money" placeholder="实际造价(>=万元)"></li>
+                                <li class="time_from_to">
+                                    <input type="text"  class="kai_date_project data_time project_input" onfocus="(this.type='date')" class="time"  name="" id="finish_realbegin_start" placeholder="实际开工日期(xxxx年-xx月-x日)" value="" />——
+                                    <input type="text"  class="jun_date_project time_small project_input" onfocus="(this.type='date')" class="time"  name="" id="finish_realbegin_end" placeholder="xxxx年-xx月-x日" value="" /></li>
+                                <li class="time_from_to">
+                                    <input type="text"  class="kaijun_date_project data_time project_input" onfocus="(this.type='date')" class="time"  name="" id="finish_realfinish_start" placeholder="实际竣工验收日期(xxxx年-xx月-x日)" value="" />——
+                                     <input type="text"  class="junjun_date_project time_small project_input" onfocus="(this.type='date')" class="time"  name="" id="finish_realfinish_end" placeholder="xxxx年-xx月-x日" value="" /></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><p>项目关键字：</p>
+                        <div class="project_child">
+                            <ul>
+
+                                <li><input type="text" class="zhongbiao_number_project project_input" id="keywords_project_name" placeholder="项目名称"></li>
+                                <li><input type="text" class="zhongbiao_number_project project_input" id="keywords_contract_scale" placeholder="合同规模"></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button class="add add3" id="add3">添加筛选</button>
+
+            </div>
+            <div class="person_insert insert">
+                <p>查询条件：</p>
+                <div class="line" id="project_line">
+                </div>
+                <!--<button class="save save3">查询</button>-->
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <p>共查询到 <span id="num">0</span>家企业</p>
+            <p><a href="#" id="showDetail">查看详情</a></p>
+        </div>
+        <div class="apper">
+            <p id="apper">请选择企业资质条件</p>
+        </div>
+        <button class="save" id="save">查询</button>
+    </div>
+    <footer>
+
+    </footer>
+</div>
+<div class="Loading" id="loading">
+    <div class="loadinPic"></div>
+   加载中
+</div>
+<script src="js/jquery-3.2.1%20.js"></script>
+<script src="js/select.js"></script>
+<script src="js/finalCompany.js"></script>
+<script src="js/personSelect.js"></script>
+<script src="js/projeact.js"></script>
+<script src="js/companyNameSearch.js"></script>
+</body>
+</html>

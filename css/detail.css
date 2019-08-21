@@ -1,0 +1,251 @@
+.demo th{
+    word-wrap:break-word;
+    width:80px;
+    overflow: auto;
+    text-align: center!important;
+    vertical-align: middle!important;
+
+}
+tbody td{
+    font-weight: normal;
+    font-size: 12px;
+}
+header{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+.demo{
+    height: auto;
+
+}
+#company_project_person{
+    overflow-x: scroll;
+}
+th p{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+/*page*/
+.page{
+    background-color: #f3f5f7;
+ text-align: center;
+}
+.page div.fun_item{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    display: inline-block;
+    margin: 0 40px;
+    font-weight: bold;
+    background-color: #00c98d;
+    color: #ffffff;
+    border-radius: 5%;
+    background-color: #348bd5;
+}
+.page .currentPage{
+    width: 100px;
+    padding: 10px;
+    color: #348bd5!important;
+   background-color: #f3f5f7!important;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    border: none;
+
+}
+.page div.fun_item:hover{
+    background-color: #f04124;
+}
+.page .currentPage{
+    width: 100px;
+    padding: 10px;
+    color: #348bd5!important;
+    background-color: #f3f5f7!important;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    border: none;
+
+}
+.page div.fun_item:hover{
+    background-color: #f04124;
+}
+.page div.pageNum,.page div.totalPage{
+    width: auto;
+    padding: 10px;
+    background-color: #f3f5f7;
+    display: inline-block;
+
+}
+.page div.pageNum span{
+    display: inline-block;
+
+    width: 30px;
+    text-align: center;
+    border: 1px solid #999999;
+    margin: 0 5px 0 5px;
+    color: #348bd5;
+
+
+
+}
+.page div.pageNum span.lastPage{
+    border: none;
+}
+.page div.pageNum span:hover{
+    color: #f04124;
+    border-color: #f04124;
+}
+/*load*/
+.Loading {
+    position: fixed;
+    top: 45%;
+    left: 46%;
+    z-index: 1000;
+    /*display: none;*/
+    text-align: center;
+}
+.loadinPic {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/loading.gif);
+    background-size: cover;
+    border-radius: 90px;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    z-index: 10;
+}
+.mask .showPeopleNum{
+
+    z-index: 20;
+    background: #ffffff;
+
+    width: 1024px;
+    height: 600px;
+    margin: 5% auto;
+    overflow-y: scroll;
+
+}
+#showPeopleNum,#showPeopleNum1{
+    display: none;
+}
+.mask .detail_num{
+    width: 1024px;
+    height: 600px;
+    overflow-y: scroll!important;
+}
+#detail_num,#detail_num1{
+    width: 100%;
+    height: 100%;
+}
+#detail_num tr,#detail_num1 tr{
+    width: 100%;
+    height: auto;
+
+}
+#detail_num tr td:first-child{
+    width: 30%;
+    height: auto;
+}
+#detail_num tr td:nth-child(2){
+    width: 70%;
+    height: auto;
+}
+
+.mask .showPeopleNum{
+    position: relative;
+}
+
+.overall{
+    z-index:0;
+    position:absolute;
+}
+.black{
+    position: fixed;
+    z-index: 2;
+    width:1920px;
+    height: 800px;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+#person_tankuang{
+    overflow: scroll;
+    background-color: white;
+    z-index:100;
+    width:1024px;
+    height: 600px;
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 15%;
+}
+caption{
+    position: relative;
+    left: 450px;
+    padding: 20px;
+}
+#person_tankuang p{
+    font-size: 12px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+#person_tankuang h5{
+    color: #348bd5!important;
+    position: relative;
+    padding:10px 20px;
+    cursor: pointer;
+}
+#person_tankuang h5:hover{
+    color: #f04124!important;
+
+}
+#person_tankuang thead tr th{
+    font-weight: normal;
+    width: 200px;
+}
+#person_tankuang .det{
+    display: none;
+}
+
+.people_num:hover{
+    color: #348bd5;
+}
+
+.stylePadding{
+    padding: 0 10px;
+}
+.btn-center{
+    width: 100%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#companyByProjectData{
+    display: none;
+}
+#page1{
+    display: none;
+}
+#companyByProjectData table tbody tr th:nth-child(4):hover{
+    color: #348bd5;
+}
+
+
+
+
+
+
+
+
+

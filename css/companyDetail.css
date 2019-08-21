@@ -1,0 +1,45 @@
+#person_body tr th:first-child{
+    color: #348bda;
+    cursor: pointer;
+}
+/*#company_tankuang{*/
+    /*overflow: scroll;*/
+    /*background-color: white;*/
+    /*z-index:1000;*/
+    /*width:1024px;*/
+    /*height: 500px;*/
+    /*display: none;*/
+    /*position: fixed;*/
+    /*top: 20%;*/
+    /*left: 15%;*/
+/*}*/
+header{
+    cursor: pointer;
+}
+
+header:hover{
+   color: #19407c;
+}
+.nav{
+     position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+#project_detail{
+    display: none;
+
+}
+#company_detail{
+    display: none;
+}
+#person_detail{
+    display: none;
+}
+#com_page{
+    display: none;
+
+}
+.overall{
+    height: auto!important;
+    background-color: transparent!important;
+}
