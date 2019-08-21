@@ -11,7 +11,8 @@
 
 效果图
 -------
-![](https://github.com/18281578906/Power-food/blob/master/asset/home222.png)   
+![](https://github.com/18281578906/Architectural-Information-Query-System/blob/master/img/selectpic.png)   
+![](https://github.com/18281578906/Architectural-Information-Query-System/blob/master/img/datapic.png)   
 
 
 
@@ -19,7 +20,7 @@
 -------
 ```html,css,javascript,jquery,bootstrap```
 
-所用api接口
+所用api接口代码git地址
 ------
 https://github.com/alinejun/jianzhu
 
