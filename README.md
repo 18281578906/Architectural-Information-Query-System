@@ -7,9 +7,13 @@
 -------  
 
 此项目是关于全国建筑信息的查询已经数据的导出，为商业项目
+1.用ps制作项目原型图
+2.负责前端开发工作，使用了HTML/CSS/JS、JQuery、bootstrap等构建前端页面。
+3.利用js+jquery封装搜索，分页，数据层级显示，利用ajax获取后端数据并处理数据格式
 
 
-效果图
+
+效果图（部分）
 -------
 ![](https://github.com/18281578906/Architectural-Information-Query-System/blob/master/img/selectpic.png)   
 ![](https://github.com/18281578906/Architectural-Information-Query-System/blob/master/img/datapic.png)   
