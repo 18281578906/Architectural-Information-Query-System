@@ -19,7 +19,11 @@
 -------
 ```html,css,javascript,jquery,bootstrap```
 
-所用api接口以及接口文档
+所用api接口
+------
+https://github.com/alinejun/jianzhu
+
+接口文档
 ------
 ## 人员筛选条件
 
